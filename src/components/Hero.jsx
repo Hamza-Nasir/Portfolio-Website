@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion"
 import { styles } from "../styles"
 import { ComputersCanvas } from './canvas'
-import Typical from 'react-typical'
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero() {
   return (
@@ -16,10 +16,17 @@ export default function Hero() {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hello! I'm <br />
-            <span className='text-[#915eff]'><Typical
-              steps={['Hamza', 1000, 'Eggy Sama', 500]}
-              loop={Infinity}
-              wrapper="p"
+            <span className='text-[#915eff]'><TypeAnimation
+              sequence={[
+                'Hamza', // Types 'One'
+                1000, // Waits 1s
+                'Eggy Sama', // Deletes 'One' and types 'Two'
+                1000
+              ]}
+              wrapper="span"
+              cursor={true}
+              repeat={Infinity}
+              
             /></span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
