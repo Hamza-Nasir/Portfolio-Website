@@ -5,6 +5,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import deployed from "./deployed.jpeg"
 import linkedin from "./linkedin.png";
 import pdf from "./pdf.png"
 import menu from "./menu.svg";
@@ -24,6 +25,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import python from "./tech/python.png"
+import next from "./tech/next.jpeg";
 
 import sonabim from "./company/sona-bim.png"
 import meta from "./company/meta.png";
@@ -35,6 +37,7 @@ import tesla from "./company/tesla.png";
 import qissa_suna from "./projects/qissa_suna.png";
 import codurr from "./projects/codurr.jpeg";
 import license_plate from "./projects/license_plate.png";
+import promptetheus from './projects/promptetheus.png';
 import coming_soon from "./projects/coming_soon.png"
 
 export {
@@ -43,6 +46,7 @@ export {
   backend,
   creator,
   mobile,
+  deployed,
   web,
   github,
   linkedin,
@@ -58,10 +62,12 @@ export {
   mongodb,
   nodejs,
   reactjs,
+  next,
   redux,
   tailwind,
   typescript,
   qissa_suna,
+  promptetheus,
   codurr,
   license_plate,
   coming_soon,

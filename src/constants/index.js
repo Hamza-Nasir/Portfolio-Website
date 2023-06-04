@@ -8,6 +8,7 @@ import {
     html,
     css,
     reactjs,
+    next,
     redux,
     tailwind,
     nodejs,
@@ -22,6 +23,7 @@ import {
     entreex,
     qissa_suna,
     codurr,
+    promptetheus,
     coming_soon,
     python,
     license_plate,
@@ -54,15 +56,15 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Frontend Engineer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "React Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Python Developer",
       icon: creator,
     },
   ];
@@ -87,6 +89,12 @@ import {
       name: "Node JS",
       icon: nodejs,
     },
+
+    {
+      name: "Next JS",
+      icon: next,
+    },
+
     {
       name: "MongoDB",
       icon: mongodb,
@@ -207,31 +215,31 @@ import {
       ],
       image: qissa_suna,
       source_code_link: "#",
+      deployment: "none",
     },
     {
-      name: "Codurr",
+      name: "Promptetheus",
       description:
-        "A simple, elegant blog reading and writing application similar to Medium, but designed for Coders, where they follow their favourite authors and browse the amazing collection of blogs available.",
+        "A simple, elegant AI prompt sharing website made in Next JS and MongoDB, where users can read interesting prompts to copy and use themselves, as well as write their own amazing ChatGPT prompts!",
       tags: [
         {
-          name: "React",
+          name: "Next",
           color: "blue-text-gradient",
         },
         {
-          name: "Node",
+          name: "MongoDB",
           color: "green-text-gradient",
         },
         {
-          name: "Express",
+          name: "JavaScript",
           color: "pink-text-gradient",
         },
-        {
-          name: "MongoDb",
-          color: "white",
-        },
+       
       ],
-      image: codurr,
-      source_code_link: "https://github.com/",
+      image: promptetheus,
+      source_code_link: "https://promptetheus-fsr9juqdy-hamza-nasir.vercel.app/",
+      deployment: "deployed",
+
     },
     {
       name: "License Plate Detection",
@@ -256,7 +264,8 @@ import {
         },
       ],
       image: license_plate,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/flowstack-ai/car-license-plate-recognition",
+      deployment: "github",
     },
 
    

@@ -29,6 +29,13 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+
+    if (form.name.length === 0 || form.email.length === 0 || form.message.length === 0) {
+      alert('Please enter your details first.')
+
+      return;
+    }
+
     setLoading(true);
 
     emailjs.send('service_nx1hh1p', 'template_0nboptm', {

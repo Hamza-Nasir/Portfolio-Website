@@ -3,12 +3,12 @@ import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
-import { github } from '../assets'
+import { github, deployed } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
-const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+const ProjectCard = ({index, name, description, tags, image, source_code_link, deployment}) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5 * 0.75)}
@@ -21,13 +21,25 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full" 
       >
-        <div className='relative w-full h-[230px]'>
+        <div className={`${deployment !== 'none' ? 'cursor-pointer' : ''} relative w-full h-[230px]`}
+          onClick={() => deployed !== 'none' && (
+            window.open(source_code_link, "_blank")
+          )}
+        >
           <img
             src={image}
             alt={name}
             className='w-full h-full object-cover rounded-2xl'
           />
 
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+            <div className={`${deployment === 'none' ? 'hidden' : ''} black-gradient w-10 h-10 rounded-full flex justify-center items-center`}>
+              <img src={deployment === "github" ? github : deployed } 
+                alt="location" 
+                className='w-1/2 h-1/2 object-contain'  
+              />
+            </div>
+          </div>
           
         </div>
 
