@@ -64,7 +64,7 @@ function Contact() {
       flex gap-10 overflow-hidden'> 
       <motion.div
         variants={slideIn('left', "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75] bg-[#262626] p-8 rounded-2xl'
       >
         <p className={`${styles.sectionSubText}`}>
           Get in touch
@@ -86,7 +86,7 @@ function Contact() {
               value={form.value}
               onChange={handleChange}
               placeholder="What's your name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary
+              className='bg-[#1A1A1A] py-4 px-6 placeholder:text-secondary
                 rounded-lg outlined-none border-none font-medium'
             />
           </label>
@@ -98,7 +98,7 @@ function Contact() {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your e-mail?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary
+              className='bg-[#1A1A1A] py-4 px-6 placeholder:text-secondary
                 rounded-lg outlined-none border-none font-medium'
             />
           </label>
@@ -111,16 +111,16 @@ function Contact() {
               value={form.message}
               onChange={handleChange}
               placeholder="Write me something nice!"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary
+              className='bg-[#1A1A1A] py-4 px-6 placeholder:text-secondary
                 rounded-lg outlined-none border-none font-medium'
             />
           </label>
 
           <button
             type="submit"
-            className='bg-tertiary py-3 px-8 outline-none
+            className='bg-[#1A1A1A] py-3 px-8 outline-none
               w-fit text-white font-bold shadow-md shadow-primary
-              rounded-xl'
+              rounded-xl hover:bg-[#000000]'
           >
             {loading ? 'Sending...' : 'Send'}
 

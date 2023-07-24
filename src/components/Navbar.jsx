@@ -24,7 +24,7 @@ export default function Navbar() {
          >
 
           <img src={logo2} alt="logo" className='w-9 h-9 object-contain' />
-          <p className='text-[18px] font-bold cursor-pointer'>Hamza Nasir | Software Engineer</p>
+          <p className='text-[18px] hidden sm:visible font-bold cursor-pointer'>Hamza Nasir | Software Engineer</p>
          </Link>
 
          <ul className='list-none hidden sm:flex flex-row gap-10'>

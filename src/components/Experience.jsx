@@ -16,7 +16,7 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
+        background: "#1A1A1A",
         color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
@@ -73,7 +73,7 @@ const Experience = () => {
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
-              experience={experience}
+            experience={experience}
             />
           ))}
         </VerticalTimeline>
@@ -82,4 +82,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "experience");

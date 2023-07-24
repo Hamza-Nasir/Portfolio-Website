@@ -19,7 +19,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, d
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full" 
+        className="bg-[#1A1A1A] p-5 rounded-2xl sm:w-[360px] w-full" 
       >
         <div className={`${deployment !== 'none' ? 'cursor-pointer' : ''} relative w-full h-[230px]`}
           onClick={() => deployed !== 'none' && (
@@ -100,4 +100,4 @@ function Works() {
   );
 }
 
-export default SectionWrapper(Works, "")
+export default SectionWrapper(Works, "projects")

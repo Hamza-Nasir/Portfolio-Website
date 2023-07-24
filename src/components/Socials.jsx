@@ -14,7 +14,7 @@ function Socials() {
     flex gap-10 justify-evenly overflow-hidden bg-red'>
                 {
                     socials.map((social, index) => (
-                        <button className='w-full h-[50px] rounded-xl font-bold border-2 border-white hover:bg-[#1f1946] '>
+                        <button className='w-full h-[50px] rounded-xl font-bold border-2 border-white hover:bg-[#1A1A1A] '>
 
 
                             <a href={social.url} target="_blank">
