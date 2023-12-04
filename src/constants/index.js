@@ -21,6 +21,8 @@ import {
     docker,
     sonabim,
     entreex,
+    antematter,
+    qlu,
     qissa_suna,
     codurr,
     promptetheus,
@@ -135,16 +137,28 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "SONA BIM",
-      icon: sonabim,
+      title: "Full Stack Developer",
+      company_name: "Antematter",
+      icon: antematter,
       iconBg: "#383E56",
-      date: "November 2022 - December 2022",
+      date: "September 2023 - Present",
       points: [
-        "I worked as a Junior React Developer for SONA BIM",
-        "Worked on converting their C# codebase to React.",
-        "Worked on Sign up, Login, Forgot password and Dashboard",
-        "Use React with JavaScript and MUI",
+        "Working as a Full Stack Developer",
+        "OnlySports - A platform bringing togeather Athletes and Managers, implemented multiple features into their MVP",
+        "Website - Made the company website scalable and added new features",
+        "Elevate - A tinder-esque hiring platform making it more fun to apply to jobs",
+      ],
+    },
+    {
+      title: "Full Stack Developer",
+      company_name: "QLU.ai",
+      icon: qlu,
+      iconBg: "#383E56",
+      date: "August 2023 - September 2023",
+      points: [
+        "Worked as a Full Stack Developer",
+        "QMail - A service inside QLU 2.0 to send mails easily, worked on new workflow",
+        "UI Library - Worked on components in UI library of QLU, which can be found at npmjs.org",
       ],
     },
     {
@@ -157,6 +171,19 @@ import {
         "I worked with another developer to make a very fast, but elegant website in HTML CSS and JS",
         "Worked on a number of pages across the entire website",
     
+      ],
+    },
+    {
+      title: "React.js Developer",
+      company_name: "SONA BIM",
+      icon: sonabim,
+      iconBg: "#383E56",
+      date: "November 2022 - December 2022",
+      points: [
+        "I worked as a Junior React Developer for SONA BIM",
+        "Worked on converting their C# codebase to React.",
+        "Worked on Sign up, Login, Forgot password and Dashboard",
+        "Use React with JavaScript and MUI",
       ],
     },
     

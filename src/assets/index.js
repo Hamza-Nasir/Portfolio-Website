@@ -33,6 +33,8 @@ import entreex from "./company/entreex.jpeg"
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import antematter from "./company/antematter.svg";
+import qlu from "./company/qlu.jpeg";
 
 import qissa_suna from "./projects/qissa_suna.png";
 import codurr from "./projects/codurr.jpeg";
@@ -75,6 +77,8 @@ export {
   python,
   sonabim,
   entreex,
+  antematter,
+  qlu,
   meta,
   shopify,
   starbucks,
